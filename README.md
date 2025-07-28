@@ -42,6 +42,6 @@ public class Sample : MonoBehaviour
 > 
 > |제목|내용|설명|
 > |------|---|---|
-> |sample1|content1|description01|
-> |sample2|content2|description02|
-> |sample3|content3|description03|
+> |Awake|씬이 시작될 때 한번만 호출되는 영역입니다. 해당 스크립트가 비활성화되어 있어도 이 위치의 작업은 실행됩니다.|해당 영역에서 코루틴으로 실행이 불가능합니다.|
+> |OnEnable|해당 위치는 오브젝트 또는 스크립트가 활성화 될 때 호출됩니다. 해당 스크립트가 비활성화되어 있어도 이 위치의 작업은 실행됩니다.|해당 위치에서는 코루틴 사용이 불가능합니다.|
+> |Start|모든 스크립트의 Awake가 다 실행된 이후 실행되는 영역입니다.|해당 영역에서는 코루틴에 대한 실행이 가능합니다.|
